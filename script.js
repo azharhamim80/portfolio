@@ -214,7 +214,10 @@ function toggleTheme() {
 
 function loadTheme() {
     const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
-    if (savedTheme === 'light') {
+    if (savedTheme === 'dark') {
+        document.body.classList.remove('light-theme');
+    } else {
+        // Default to bright mode when no theme has been saved yet.
         document.body.classList.add('light-theme');
     }
     updateThemeButtonLabel();
