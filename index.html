@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Azhar Hamim - Flutter Developer | CSE Final-Year Student | AI Enthusiast. Portfolio showcasing mobile applications and projects.">
+    <meta name="keywords" content="Flutter Developer, Mobile App Developer, Computer Science, AI, Machine Learning, Firebase, Dart">
+    <meta name="author" content="Azhar Hamim">
+    
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Azhar Hamim - Flutter Developer Portfolio">
+    <meta property="og:description" content="Final-year CSE student focused on building scalable mobile applications using Flutter.">
+    <meta property="og:type" content="website">
+    
+    <title>Azhar Hamim - Flutter Developer | Portfolio</title>
+    
+    <!-- Favicon Placeholder -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">AH<span class="logo-dot">.</span></a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to bright mode">
+                        Bright Mode
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Azhar Hamim</h1>
+                    <h2 class="hero-title">Flutter Developer<span class="title-divider">|</span>Curious About Machine Learning & AI<span class="title-divider">|</span>CSE Final-Year Student</h2>
+                    <p class="hero-description">
+                        Building scalable mobile applications with clean architecture. 
+                        Passionate about AI and creating seamless user experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-profile">
+                        <div class="hero-profile-photo-wrap">
+                            <img
+                                class="hero-profile-photo"
+                                src="profile.png"
+                                alt="Azhar Hamim profile photo"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        I'm a final-year Computer Science student with a passion for mobile development 
+                        and artificial intelligence. My journey in software development began with a 
+                        curiosity about how apps work, and it has evolved into a dedication to building 
+                        scalable, user-centric mobile applications.
+                    </p>
+                    <p class="about-paragraph">
+                        I specialize in <strong>Flutter development</strong>, creating cross-platform 
+                        applications that deliver seamless experiences on both iOS and Android. My 
+                        approach emphasizes clean architecture,and efficient state management.
+                    </p>
+                    <p class="about-paragraph">
+                        Beyond mobile development, I'm exploring the intersection of AI and mobile 
+                        technology, working on projects that integrate machine learning capabilities 
+                        into everyday applications. I'm always eager to learn new technologies and 
+                        solve complex problems.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎓</span>
+                            <div class="highlight-content">
+                                <h4>Education</h4>
+                                <p>B.Sc. in Computer Science & Engineering</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">💼</span>
+                            <div class="highlight-content">
+                                <h4>Focus</h4>
+                                <p>Mobile Development & AI</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🚀</span>
+                            <div class="highlight-content">
+                                <h4>Status</h4>
+                                <p>Open to Opportunities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-grid">
+                <article class="education-card">
+                    <h3 class="education-degree">Bachelor of Science in Computer Science & Engineering</h3>
+                    <p class="education-line"><strong>University: </strong>Leading University</p>
+                    <p class="education-line"><strong>Department: </strong>Computer Science & Engineering</p>
+                    <p class="education-line"><strong>CGPA: </strong>3.51 / 4.00</p>
+                </article>
+                <article class="education-card">
+                    <h3 class="education-degree">Higher Secondary Certificate (Intermediate)</h3>
+                    <p class="education-line"><strong>Institute: </strong>Sylhet Science & technology College</p>
+                    <p class="education-line"><strong>Department: </strong>Science</p>
+                    <p class="education-line"><strong>GPA: </strong>5.00 / 5.00</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Flutter</h3>
+                    <p class="skill-description">Cross-platform mobile development with beautiful, native UIs</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 18L22 12L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 6L2 12L8 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Dart</h3>
+                    <p class="skill-description">Strong programming fundamentals and object-oriented design</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Firebase</h3>
+                    <p class="skill-description">Backend services, authentication, real-time database, and cloud storage</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M3 9H21" stroke="currentColor" stroke-width="2"/>
+                            <path d="M9 21V9" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">SQLite</h3>
+                    <p class="skill-description">Local data persistence and efficient database management</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M2 12H22" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 2C14.5 4.5 16 8 16 12C16 16 14.5 19.5 12 22C9.5 19.5 8 16 8 12C8 8 9.5 4.5 12 2Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">REST API Integration</h3>
+                    <p class="skill-description">Connecting apps with backend services and third-party APIs</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 1V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 18V23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4.22 4.22L7.86 7.86" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16.14 16.14L19.78 19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M1 12H6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M18 12H23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4.22 19.78L7.86 16.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16.14 7.86L19.78 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Git & GitHub</h3>
+                    <p class="skill-description">Version control, collaboration, and code management</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 12H18L15 21L9 3L6 12H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Python</h3>
+                    <p class="skill-description">Scripting, automation, and backend development</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18H19C20.1046 18 21 17.1046 21 16Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M7 10H7.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M11 10H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 14H7.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M11 14H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Machine Learning Basics</h3>
+                    <p class="skill-description">Understanding ML concepts and integrating AI features</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="research" id="research">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Research Work</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="research-grid">
+                <article class="research-card">
+                    <h3 class="research-title">Predictive Analysis of Anxiety Among Bangladeshi University Students Using Machine Learning and Explainable AI</h3>
+                    <p class="research-meta">Role: Primary Researcher | Year: 2025</p>
+                    <p class="research-description">
+                        This study investigates the application of machine learning models and explainable AI techniques to analyze and predict anxiety patterns among university students in Bangladesh, with emphasis on model performance, feature selection, class balancing, and interpretability.
+                    </p>
+                    <div class="research-tags">
+                        <span class="research-tag">AI</span>
+                        <span class="research-tag">Machine Learning</span>
+                        <span class="research-tag">Data Analysis</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                
+                <!-- Project 1: House Rental App -->
+                <article class="project-card">
+                    <div class="project-number">01</div>
+                    <div class="project-content">
+                        <h3 class="project-title">House Rental App</h3>
+                        <p class="project-description">
+                            A comprehensive mobile application for house rental management featuring 
+                            user authentication, property listings, search functionality, and favorites. 
+                            Built with Firebase for backend services and implements clean architecture 
+                            principles for maintainable code.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Authentication</span>
+                            <span class="tech-tag">Cloud Firestore</span>
+                            <span class="tech-tag">Responsive UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 19C4 20.5 4 16.5 2 16M16 22V18.13C16.03 17.65 15.96 17.17 15.79 16.72C15.62 16.27 15.35 15.87 15 15.54C18.2 15.17 21.5 13.98 21.5 8.52C21.5 7.12 20.95 5.98 20 5.16C20.45 4.06 20.42 2.77 19.92 1.7C19.92 1.7 18.73 1.32 16 3.22C13.73 2.63 11.27 2.63 9 3.22C6.27 1.32 5.08 1.7 5.08 1.7C4.58 2.77 4.55 4.06 5 5.16C4.05 5.98 3.5 7.12 3.5 8.52C3.5 13.97 6.8 15.17 10 15.54C9.65 15.87 9.38 16.27 9.21 16.72C9.04 17.17 8.97 17.65 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: AI Health Assistant -->
+                <article class="project-card">
+                    <div class="project-number">02</div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Health Assistant</h3>
+                        <p class="project-description">
+                            An intelligent mobile health companion featuring an AI-powered chatbot for 
+                            health queries, symptom tracking, medication reminders, and personalized 
+                            health insights.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Local Notifications</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/miti404/Third_Year_Project" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 19C4 20.5 4 16.5 2 16M16 22V18.13C16.03 17.65 15.96 17.17 15.79 16.72C15.62 16.27 15.35 15.87 15 15.54C18.2 15.17 21.5 13.98 21.5 8.52C21.5 7.12 20.95 5.98 20 5.16C20.45 4.06 20.42 2.77 19.92 1.7C19.92 1.7 18.73 1.32 16 3.22C13.73 2.63 11.27 2.63 9 3.22C6.27 1.32 5.08 1.7 5.08 1.7C4.58 2.77 4.55 4.06 5 5.16C4.05 5.98 3.5 7.12 3.5 8.52C3.5 13.97 6.8 15.17 10 15.54C9.65 15.87 9.38 16.27 9.21 16.72C9.04 17.17 8.97 17.65 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: E-Commerce Mobile App -->
+                <article class="project-card">
+                    <div class="project-number">03</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Life in The UK</h3>
+                        <p class="project-description">
+                            A feature-rich shopping application with product browsing, cart management, 
+                            order tracking, and payment integration. Implements state management using 
+                            Provider pattern, offline-first architecture with local caching, and smooth 
+                            animations for enhanced user experience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">State Management</span>
+                            <span class="tech-tag">Offline Support</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/azharhamim80/lifeintheUK" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 19C4 20.5 4 16.5 2 16M16 22V18.13C16.03 17.65 15.96 17.17 15.79 16.72C15.62 16.27 15.35 15.87 15 15.54C18.2 15.17 21.5 13.98 21.5 8.52C21.5 7.12 20.95 5.98 20 5.16C20.45 4.06 20.42 2.77 19.92 1.7C19.92 1.7 18.73 1.32 16 3.22C13.73 2.63 11.27 2.63 9 3.22C6.27 1.32 5.08 1.7 5.08 1.7C4.58 2.77 4.55 4.06 5 5.16C4.05 5.98 3.5 7.12 3.5 8.52C3.5 13.97 6.8 15.17 10 15.54C9.65 15.87 9.38 16.27 9.21 16.72C9.04 17.17 8.97 17.65 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3 class="contact-heading">Let's Build Something Together</h3>
+                    <p class="contact-description">
+                        I'm currently looking for new opportunities and my inbox is always open. 
+                        Whether you have a question, want to discuss a project, or just want to say hi, 
+                        I'll do my best to get back to you!
+                    </p>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:azhar.hamim@example.com" class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M3 7L12 13L21 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Email</h4>
+                            <p>azharhamim80@gmail.com</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/azhar-hamim-933b12228/" class="contact-card" target="_blank" rel="noopener noreferrer">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/azharhamim</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://github.com/azharhamim80" class="contact-card" target="_blank" rel="noopener noreferrer">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 19C4 20.5 4 16.5 2 16M16 22V18.13C16.03 17.65 15.96 17.17 15.79 16.72C15.62 16.27 15.35 15.87 15 15.54C18.2 15.17 21.5 13.98 21.5 8.52C21.5 7.12 20.95 5.98 20 5.16C20.45 4.06 20.42 2.77 19.92 1.7C19.92 1.7 18.73 1.32 16 3.22C13.73 2.63 11.27 2.63 9 3.22C6.27 1.32 5.08 1.7 5.08 1.7C4.58 2.77 4.55 4.06 5 5.16C4.05 5.98 3.5 7.12 3.5 8.52C3.5 13.97 6.8 15.17 10 15.54C9.65 15.87 9.38 16.27 9.21 16.72C9.04 17.17 8.97 17.65 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h4>GitHub</h4>
+                            <p>github.com/azharhamim</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-links">
+                <a href="azharhamim80@gmail.com" aria-label="Email">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <path d="M3 7L12 13L21 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/azhar-hamim-933b12228/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/azharhamim80" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 19C4 20.5 4 16.5 2 16M16 22V18.13C16.03 17.65 15.96 17.17 15.79 16.72C15.62 16.27 15.35 15.87 15 15.54C18.2 15.17 21.5 13.98 21.5 8.52C21.5 7.12 20.95 5.98 20 5.16C20.45 4.06 20.42 2.77 19.92 1.7C19.92 1.7 18.73 1.32 16 3.22C13.73 2.63 11.27 2.63 9 3.22C6.27 1.32 5.08 1.7 5.08 1.7C4.58 2.77 4.55 4.06 5 5.16C4.05 5.98 3.5 7.12 3.5 8.52C3.5 13.97 6.8 15.17 10 15.54C9.65 15.87 9.38 16.27 9.21 16.72C9.04 17.17 8.97 17.65 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-copyright">© 2026 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
