@@ -542,6 +542,7 @@ section {
 .education-grid {
     display: grid;
     grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
 }
 
 .education-card {
