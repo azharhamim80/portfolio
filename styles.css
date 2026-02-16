@@ -1021,6 +1021,10 @@ section {
 
 /* Tablet */
 @media (max-width: 1024px) {
+    .hero {
+        padding-top: 110px;
+    }
+
     .hero-content {
         grid-template-columns: 1fr;
         gap: var(--spacing-2xl);
@@ -1036,6 +1040,13 @@ section {
     
     .skills-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+/* Small Laptop */
+@media (min-width: 769px) and (max-width: 1366px) {
+    .hero {
+        padding-top: 140px;
     }
 }
 
