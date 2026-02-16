@@ -523,6 +523,13 @@ section {
 .highlight-icon {
     font-size: 2rem;
     line-height: 1;
+    color: var(--color-accent-primary);
+}
+
+.highlight-icon svg {
+    width: 2rem;
+    height: 2rem;
+    display: block;
 }
 
 .highlight-content h4 {
